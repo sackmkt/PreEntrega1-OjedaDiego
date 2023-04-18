@@ -9,10 +9,12 @@ if (respuesta <=5){
     alert("El numero esta perfecto, vamos a evaluarte");
 } else {
     alert("NO ingresaste el numero dentro de lo solicitado, intentalo de nuevo");
-    InicioPagina
+    InicioPagina()
 }
- 
 }
+
+InicioPagina()
+
 
 // switch(respuesta){
 
