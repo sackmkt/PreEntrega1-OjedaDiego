@@ -5,17 +5,27 @@ alert("Dinos, cuales son tus espectativas por aprender este lenguaje?");
 
 let respuesta = prompt("Del 1 al 5, que numero pondrias: ");
 
-function InicioPagina(){ 
-if (respuesta <=5){
-    alert("El numero esta perfecto, vamos a evaluarte");
-    respuesta1();
-} else {
-    alert("NO ingresaste el numero dentro de lo solicitado, intentalo de nuevo");
-    respuesta1();
-}
+InicioPagina()
+
+
+while (respuesta > 5){
+
+    respuesta = prompt("Nuevamente, del 1 al 5, que numero pondrias: ");
+    InicioPagina();
 }
 
-InicioPagina()
+ alert("Nos vemos la proxima amigo, gracias por estudiar con nosotros");
+
+
+function InicioPagina(){ 
+    if (respuesta <=5){
+        alert("El numero esta perfecto, vamos a evaluarte");
+        respuesta1();
+    } else {
+        alert("NO ingresaste el numero dentro de lo solicitado, intentalo de nuevo");
+        respuesta1();
+    }
+    }
 
 function respuesta1(){
 switch(respuesta){
@@ -35,11 +45,13 @@ switch(respuesta){
                 alert("Increible, no esperaba menos! Este curso es para vos, tu puedes!!");
                 break;
         default:
-            alert("No hay ninguna informacion que nos sirva")
+            // alert("No hay ninguna informacion que nos sirva")
             break;
 
 
  }
 }
+
+
 
 
